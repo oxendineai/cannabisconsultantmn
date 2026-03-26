@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cannabis Consultant MN | Minnesota's Premier Cannabis Consulting</title>
+  <meta name="description" content="Minnesota's highest-caliber cannabis consulting firm. Licensing, facility buildout, SOPs, FPOR, and compliance — led by Alexander L. Oxendine, the consultant who built White Earth Nation's $6M cannabis operation from the ground up." />
+  <meta name="keywords" content="Minnesota cannabis consultant, cannabis licensing MN, OCM consulting, cannabis FPOR Minnesota, cannabis SOP Minnesota, microbusiness license MN, cannabis facility buildout" />
+  <meta property="og:title" content="Cannabis Consultant MN | Alexander L. Oxendine" />
+  <meta property="og:description" content="Minnesota's only cannabis consultant who built a tribal operation from zero to $6M. End-to-end licensing, compliance, and facility expertise." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cannabisconsultantmn.com" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Cannabis Consultant MN",
+    "description": "Minnesota's premier cannabis consulting firm specializing in licensing, facility buildout, compliance, and OCM navigation.",
+    "url": "https://cannabisconsultantmn.com",
+    "telephone": "808-557-1122",
+    "email": "a@oxendinellc.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "MN",
+      "addressCountry": "US"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Alexander L. Oxendine"
+    },
+    "areaServed": "Minnesota",
+    "serviceType": ["Cannabis Licensing", "FPOR Preparation", "SOP Development", "Facility Design", "OCM Compliance", "Business Planning"]
+  }
+  </script>
+
+  <style>
+    :root {
+      --forest: #1a2e1f;
+      --forest-mid: #243428;
+      --forest-light: #2e4234;
+      --gold: #c9a84c;
+      --gold-light: #e2c47a;
+      --gold-pale: #f5e9c8;
+      --cream: #f8f4ed;
+      --white: #ffffff;
+      --text-dark: #0f1a12;
+      --text-mid: #3a4d3e;
+      --text-muted: #6b7f6e;
+      --border: rgba(201, 168, 76, 0.2);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 1.2rem 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(26, 46, 31, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--gold-light);
+      letter-spacing: 0.02em;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--gold-light); }
+
+    .nav-cta {
+      background: var(--gold);
+      color: var(--forest) !important;
+      padding: 0.55rem 1.4rem;
+      border-radius: 2px;
+      font-weight: 500 !important;
+      letter-spacing: 0.08em !important;
+      transition: background 0.2s !important;
+    }
+
+    .nav-cta:hover { background: var(--gold-light) !important; color: var(--forest) !important; }
+
+    /* ─── HERO ─── */
+    .hero {
+      min-height: 100vh;
+      background: var(--forest);
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding: 8rem 4rem 5rem;
+    }
+
+    .hero-texture {
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(ellipse 80% 60% at 70% 50%, rgba(201,168,76,0.06) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 40% at 20% 80%, rgba(201,168,76,0.04) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.2s forwards;
+    }
+
+    .hero-eyebrow::before {
+      content: '';
+      width: 30px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .hero-headline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 6vw, 5.5rem);
+      font-weight: 600;
+      line-height: 1.05;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.4s forwards;
+    }
+
+    .hero-headline em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.75;
+      color: rgba(255,255,255,0.65);
+      max-width: 560px;
+      margin-bottom: 2.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.6s forwards;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.8s forwards;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--forest);
+      padding: 1rem 2.2rem;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 2px;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.82rem;
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .btn-ghost:hover { color: var(--gold-light); }
+    .btn-ghost svg { transition: transform 0.2s; }
+    .btn-ghost:hover svg { transform: translateX(3px); }
+
+    .hero-stat-bar {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: rgba(0,0,0,0.25);
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 4rem;
+      display: flex;
+      gap: 4rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 1s forwards;
+    }
+
+    .hero-stat { }
+
+    .hero-stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--gold-light);
+      line-height: 1;
+    }
+
+    .hero-stat-label {
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      margin-top: 0.3rem;
+    }
+
+    /* ─── PROOF STRIP ─── */
+    .proof-strip {
+      background: var(--gold);
+      padding: 1rem 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .proof-item {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--forest);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .proof-dot {
+      width: 4px;
+      height: 4px;
+      background: var(--forest);
+      border-radius: 50%;
+    }
+
+    /* ─── SECTIONS ─── */
+    section { padding: 6rem 4rem; }
+
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .section-label::before {
+      content: '';
+      width: 24px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      font-weight: 600;
+      line-height: 1.1;
+      color: var(--forest);
+      margin-bottom: 1.25rem;
+    }
+
+    .section-title em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .section-body {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: var(--text-mid);
+      max-width: 600px;
+    }
+
+    /* ─── WHITE EARTH FEATURE ─── */
+    .white-earth {
+      background: var(--forest);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .white-earth-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .we-content .section-title { color: var(--white); }
+    .we-content .section-body { color: rgba(255,255,255,0.6); }
+
+    .we-content .section-label { color: var(--gold); }
+    .we-content .section-label::before { background: var(--gold); }
+
+    .we-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-style: italic;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.6;
+      margin-top: 2rem;
+      padding-left: 1.5rem;
+      border-left: 2px solid var(--gold);
+    }
+
+    .we-metrics {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5px;
+      background: var(--border);
+    }
+
+    .we-metric {
+      background: var(--forest-mid);
+      padding: 2.5rem;
+      text-align: center;
+    }
+
+    .we-metric-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3rem;
+      font-weight: 600;
+      color: var(--gold-light);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .we-metric-label {
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      line-height: 1.4;
+    }
+
+    .we-badge {
+      background: var(--forest-light);
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+      margin-top: 1.5px;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .we-badge-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--gold);
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.2rem;
+    }
+
+    .we-badge-text {
+      font-size: 0.8rem;
+      line-height: 1.5;
+      color: rgba(255,255,255,0.6);
+    }
+
+    .we-badge-text strong {
+      color: var(--white);
+      font-weight: 500;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    /* ─── SERVICES ─── */
+    .services-section {
+      background: var(--cream);
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .services-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: end;
+      margin-bottom: 4rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(26,46,31,0.1);
+    }
+
+    .service-card {
+      background: var(--white);
+      padding: 2.5rem;
+      transition: background 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover { background: var(--forest); }
+    .service-card:hover .service-title { color: var(--white); }
+    .service-card:hover .service-body { color: rgba(255,255,255,0.55); }
+    .service-card:hover .service-num { color: rgba(255,255,255,0.15); }
+    .service-card:hover::after { transform: scaleX(1); }
+
+    .service-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3.5rem;
+      font-weight: 600;
+      color: rgba(26,46,31,0.08);
+      line-height: 1;
+      margin-bottom: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    .service-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--forest);
+      margin-bottom: 0.75rem;
+      line-height: 1.2;
+      transition: color 0.3s;
+    }
+
+    .service-body {
+      font-size: 0.85rem;
+      font-weight: 300;
+      line-height: 1.7;
+      color: var(--text-muted);
+      transition: color 0.3s;
+    }
+
+    /* ─── PROCESS ─── */
+    .process-section {
+      background: var(--forest);
+      padding: 6rem 4rem;
+    }
+
+    .process-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .process-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .process-header .section-title { color: var(--white); margin: 0 auto; }
+    .process-header .section-label { justify-content: center; }
+    .process-header .section-label::before { display: none; }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      position: relative;
+    }
+
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 2rem;
+      left: 12.5%;
+      right: 12.5%;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .process-step {
+      padding: 0 1.5rem;
+      text-align: center;
+    }
+
+    .step-num {
+      width: 4rem;
+      height: 4rem;
+      background: var(--forest-light);
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--gold);
+      position: relative;
+      z-index: 1;
+    }
+
+    .step-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+
+    .step-body {
+      font-size: 0.78rem;
+      font-weight: 300;
+      line-height: 1.6;
+      color: rgba(255,255,255,0.45);
+    }
+
+    /* ─── ABOUT ─── */
+    .about-section {
+      background: var(--cream);
+      padding: 6rem 4rem;
+    }
+
+    .about-inner {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 6rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      align-items: start;
+    }
+
+    .about-creds {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      margin-top: 2.5rem;
+    }
+
+    .cred-item {
+      background: var(--white);
+      border-left: 2px solid var(--gold);
+      padding: 1.1rem 1.5rem;
+      font-size: 0.85rem;
+      color: var(--text-mid);
+      line-height: 1.5;
+    }
+
+    .cred-item strong {
+      color: var(--forest);
+      font-weight: 500;
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+
+    .about-card {
+      background: var(--forest);
+      padding: 3rem;
+      position: sticky;
+      top: 6rem;
+    }
+
+    .about-card-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 0.3rem;
+    }
+
+    .about-card-title {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .about-card-bio {
+      font-size: 0.88rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 2rem;
+    }
+
+    .about-card-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .contact-line {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .contact-line:hover { color: var(--gold-light); }
+
+    .contact-icon {
+      width: 28px;
+      height: 28px;
+      background: var(--forest-light);
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    /* ─── CTA ─── */
+    .cta-section {
+      background: var(--gold);
+      padding: 5rem 4rem;
+      text-align: center;
+    }
+
+    .cta-label {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--forest);
+      opacity: 0.6;
+      margin-bottom: 1rem;
+    }
+
+    .cta-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      font-weight: 600;
+      color: var(--forest);
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-body {
+      font-size: 1rem;
+      font-weight: 300;
+      color: rgba(26,46,31,0.7);
+      max-width: 500px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.7;
+    }
+
+    .btn-dark {
+      display: inline-block;
+      background: var(--forest);
+      color: var(--gold-light);
+      padding: 1rem 2.5rem;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 2px;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn-dark:hover { background: var(--forest-light); transform: translateY(-1px); }
+
+    /* ─── CONTACT ─── */
+    .contact-section {
+      background: var(--forest);
+      padding: 5rem 4rem;
+    }
+
+    .contact-inner {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .contact-inner .section-title { color: var(--white); }
+    .contact-inner .section-label { justify-content: center; }
+    .contact-inner .section-label::before { display: none; }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+      margin-top: 3rem;
+    }
+
+    .contact-block {
+      background: var(--forest-mid);
+      padding: 2.5rem;
+      text-align: left;
+    }
+
+    .contact-block-label {
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-block-value {
+      font-size: 1.05rem;
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 300;
+      transition: color 0.2s;
+    }
+
+    a.contact-block-value:hover { color: var(--gold-light); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--text-dark);
+      padding: 2rem 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: 0.02em;
+    }
+
+    .footer-copy {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.3);
+      letter-spacing: 0.04em;
+    }
+
+    /* ─── ANIMATIONS ─── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      nav { padding: 1rem 1.5rem; }
+      .nav-links { display: none; }
+      section { padding: 4rem 1.5rem; }
+      .hero { padding: 6rem 1.5rem 5rem; }
+      .hero-stat-bar { padding: 1.5rem; gap: 2rem; flex-wrap: wrap; }
+      .white-earth-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .services-header { grid-template-columns: 1fr; gap: 2rem; }
+      .services-grid { grid-template-columns: 1fr; }
+      .process-steps { grid-template-columns: 1fr 1fr; }
+      .process-steps::before { display: none; }
+      .about-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .about-card { position: static; }
+      .contact-grid { grid-template-columns: 1fr; }
+      footer { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">Cannabis Consultant MN</a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#contact" class="nav-cta">Get Started</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-texture"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Minnesota Cannabis Consulting</div>
+      <h1 class="hero-headline">
+        From License Application<br>to <em>Open for Business</em>
+      </h1>
+      <p class="hero-sub">
+        Minnesota's highest-caliber cannabis consulting practice. End-to-end expertise in licensing, facility buildout, FPOR, SOPs, and OCM compliance — led by Alexander Oxendine, who personally took White Earth Nation's cannabis operation from zero to $6 million in a single year.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Schedule a Consultation</a>
+        <a href="#services" class="btn-ghost">
+          View Services
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-stat-bar">
+      <div class="hero-stat">
+        <div class="hero-stat-num">$6M+</div>
+        <div class="hero-stat-label">Revenue Generated for Clients</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">7,000+</div>
+        <div class="hero-stat-label">Plants at Peak Operations</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">MN</div>
+        <div class="hero-stat-label">Based &amp; Exclusively Focused</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">Full</div>
+        <div class="hero-stat-label">License-to-Launch Coverage</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF STRIP -->
+  <div class="proof-strip">
+    <div class="proof-item">OCM Licensing &amp; Compliance</div>
+    <div class="proof-dot"></div>
+    <div class="proof-item">FPOR &amp; SOP Development</div>
+    <div class="proof-dot"></div>
+    <div class="proof-item">Tribal Cannabis Experience</div>
+    <div class="proof-dot"></div>
+    <div class="proof-item">Facility Design &amp; Buildout</div>
+    <div class="proof-dot"></div>
+    <div class="proof-item">Municipal Approval Strategy</div>
+  </div>
+
+  <!-- WHITE EARTH FEATURE -->
+  <section class="white-earth" id="results">
+    <div class="white-earth-inner">
+      <div class="we-content reveal">
+        <div class="section-label">Proven Results</div>
+        <h2 class="section-title">Built from a Blank Canvas.<br><em>Zero to $6 Million.</em></h2>
+        <p class="section-body">
+          When White Earth Nation set out to launch their cannabis operation — Waabigwan Mashkiki, LLC — there was nothing. No cultivation. No sales. No infrastructure. Just a vision and the complexity of tribal cannabis regulation.
+        </p>
+        <p class="section-body" style="margin-top:1rem;">
+          Alexander Oxendine stepped in and built the entire enterprise from scratch. In one year, he secured licensing, designed and built out the full facility, implemented cultivation practices, trained staff, established financial controls, and crafted a market strategy tailored to the unique legal and cultural landscape of tribal cannabis.
+        </p>
+        <blockquote class="we-quote">
+          "Alexander took us from nothing to a fully operational, $6 million enterprise — in a single year."
+        </blockquote>
+      </div>
+      <div class="we-right reveal">
+        <div class="we-metrics">
+          <div class="we-metric">
+            <div class="we-metric-num">$6M+</div>
+            <div class="we-metric-label">Annual Revenue<br>Generated</div>
+          </div>
+          <div class="we-metric">
+            <div class="we-metric-num">7,000+</div>
+            <div class="we-metric-label">Plants at Peak<br>Operations</div>
+          </div>
+          <div class="we-metric">
+            <div class="we-metric-num">1 Yr</div>
+            <div class="we-metric-label">Zero to $6M —<br>In Just One Year</div>
+          </div>
+          <div class="we-metric">
+            <div class="we-metric-num">Full</div>
+            <div class="we-metric-label">End-to-End Build<br>License to Operations</div>
+          </div>
+        </div>
+        <div class="we-badge">
+          <div class="we-badge-icon">🏛️</div>
+          <div class="we-badge-text">
+            <strong>Waabigwan Mashkiki, LLC</strong>
+            White Earth Nation Cannabis — built and launched by Oxendine Consulting, LLC
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" style="padding: 6rem 4rem; background: var(--cream);">
+    <div style="max-width:1300px; margin:0 auto;">
+      <div class="services-header reveal">
+        <div>
+          <div class="section-label">What We Do</div>
+          <h2 class="section-title">Full-Spectrum<br><em>Cannabis Consulting</em></h2>
+        </div>
+        <p class="section-body">
+          Every engagement is handled personally by Alexander Oxendine — not a junior associate. You get direct access to the expertise that built Minnesota's most successful tribal cannabis operation.
+        </p>
+      </div>
+      <div class="services-grid reveal">
+        <div class="service-card">
+          <div class="service-num">01</div>
+          <div class="service-title">License Strategy &amp; Application</div>
+          <div class="service-body">Full OCM license application management for all license types — microbusiness, cultivator, retailer, mezzobusiness, and more. We know what the state wants and how to give it to them.</div>
+        </div>
+        <div class="service-card">
+          <div class="service-num">02</div>
+          <div class="service-title">Final Plans of Record &amp; SOPs</div>
+          <div class="service-body">Comprehensive FPOR packages and Standard Operating Procedures built to OCM standards. The documentation that takes you from pre-approved to fully licensed and operational.</div>
+        </div>
+        <div class="service-card">
+          <div class="service-num">03</div>
+          <div class="service-title">Facility Assessment &amp; Buildout</div>
+          <div class="service-body">On-site evaluation, infrastructure planning, cultivation layout, HVAC, lighting, security design, and full buildout consulting. We've built facilities from the ground up — we know exactly what works.</div>
+        </div>
+        <div class="service-card">
+          <div class="service-num">04</div>
+          <div class="service-title">Business Planning &amp; Financials</div>
+          <div class="service-body">Investor-ready business plans, financial modeling, and operational projections tailored for Minnesota's market. Built for licensing boards, investors, and lenders alike.</div>
+        </div>
+        <div class="service-card">
+          <div class="service-num">05</div>
+          <div class="service-title">Municipal &amp; City Council Strategy</div>
+          <div class="service-body">Local approval navigation, zoning strategy, and city council presentation development. After January 2025, Minnesota cities cannot block licensed cannabis businesses — we help you move forward confidently.</div>
+        </div>
+        <div class="service-card">
+          <div class="service-num">06</div>
+          <div class="service-title">OCM Compliance &amp; Ongoing Support</div>
+          <div class="service-body">Regulatory monitoring, compliance audits, deficiency notice response, and ongoing OCM navigation. The cannabis landscape in Minnesota moves fast — we keep you ahead of it.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process-section" id="process">
+    <div class="process-inner">
+      <div class="process-header reveal">
+        <div class="section-label">How We Work</div>
+        <h2 class="section-title">A Clear Path<br><em>From Idea to Open</em></h2>
+      </div>
+      <div class="process-steps reveal">
+        <div class="process-step">
+          <div class="step-num">1</div>
+          <div class="step-title">Strategy Session</div>
+          <div class="step-body">We start with a direct conversation — your goals, your market, your timeline. No fluff, just a clear picture of what's possible and what it takes.</div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">2</div>
+          <div class="step-title">Licensing &amp; Application</div>
+          <div class="step-body">Full OCM application management. We handle the paperwork, navigate the process, and build the documentation the state needs to move you forward.</div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">3</div>
+          <div class="step-title">Facility &amp; Operations</div>
+          <div class="step-body">FPOR, SOPs, facility design, buildout consulting. Every operational document and physical requirement covered — built to pass inspection.</div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">4</div>
+          <div class="step-title">Launch &amp; Beyond</div>
+          <div class="step-body">From final site inspection to opening day. Ongoing compliance support, staff training, and operational guidance as your business scales.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <div class="about-inner">
+      <div class="reveal">
+        <div class="section-label">Who You're Working With</div>
+        <h2 class="section-title">Minnesota-Based.<br><em>Proven Expertise.</em></h2>
+        <p class="section-body">
+          Oxendine Consulting is not a national firm parachuting into Minnesota with generic playbooks. This is a Minnesota-rooted practice built on direct, hands-on experience with the OCM, the state's unique licensing landscape, and the communities that make up this market.
+        </p>
+        <div class="about-creds">
+          <div class="cred-item">
+            <strong>Personally Built White Earth Nation's Cannabis Operation</strong>
+            Alexander Oxendine took Waabigwan Mashkiki, LLC from zero to 7,000+ plants and $6M+ revenue — in a single year
+          </div>
+          <div class="cred-item">
+            <strong>Full OCM Licensing Experience</strong>
+            Microbusiness, cultivator, retailer — navigated every OCM license type
+          </div>
+          <div class="cred-item">
+            <strong>FPOR &amp; SOP Specialist</strong>
+            Dozens of final plans of record and SOP packages delivered to OCM standards
+          </div>
+          <div class="cred-item">
+            <strong>Facility Design &amp; Buildout</strong>
+            On-the-ground experience designing and building cannabis facilities in Minnesota
+          </div>
+          <div class="cred-item">
+            <strong>Municipal &amp; Tribal Cannabis Law</strong>
+            Deep knowledge of both state OCM requirements and tribal cannabis law — including writing and developing tribal cannabis codes and regulations
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="about-card">
+          <div class="about-card-name">Alexander L. Oxendine</div>
+          <div class="about-card-title">Founder &amp; CEO — Oxendine Consulting, LLC</div>
+          <p class="about-card-bio">
+            Minnesota-based cannabis consultant with direct experience building and launching cannabis operations across the state — from tribal enterprises to independent microbusinesses. Every client gets Alexander directly, not a junior consultant.
+          </p>
+          <div class="about-card-contact">
+            <a href="mailto:a@oxendinellc.com" class="contact-line">
+              <div class="contact-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              a@oxendinellc.com
+            </a>
+            <a href="tel:8085571122" class="contact-line">
+              <div class="contact-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.38 2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91A16 16 0 0 0 13 15l.94-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              808-557-1122
+            </a>
+            <a href="#" class="contact-line">
+              <div class="contact-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+              </div>
+              oxendinellc.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-label">Ready to Move Forward?</div>
+    <h2 class="cta-title">Let's Build Something<br>That Works in Minnesota</h2>
+    <p class="cta-body">
+      Whether you're starting from zero or need help crossing the finish line — licensing, compliance, facility, or anything in between — let's have a real conversation.
+    </p>
+    <a href="#contact" class="btn-dark">Schedule a Consultation</a>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
+      <div class="section-label">Get in Touch</div>
+      <h2 class="section-title" style="color:var(--white);">Start the Conversation</h2>
+      <div class="contact-grid">
+        <div class="contact-block">
+          <div class="contact-block-label">Email</div>
+          <a href="mailto:a@oxendinellc.com" class="contact-block-value">a@oxendinellc.com</a>
+        </div>
+        <div class="contact-block">
+          <div class="contact-block-label">Phone</div>
+          <a href="tel:8085571122" class="contact-block-value">808-557-1122</a>
+        </div>
+        <div class="contact-block">
+          <div class="contact-block-label">Based In</div>
+          <span class="contact-block-value">Lengby, Minnesota</span>
+        </div>
+        <div class="contact-block">
+          <div class="contact-block-label">Service Area</div>
+          <span class="contact-block-value">All of Minnesota</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Cannabis Consultant MN</div>
+    <div class="footer-copy">© 2025 Oxendine Consulting, LLC · cannabisconsultantmn.com</div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if (el) {
+          e.preventDefault();
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
