@@ -150,9 +150,10 @@
       background: var(--forest);
       display: flex;
       align-items: center;
+      justify-content: center;
       position: relative;
       overflow: hidden;
-      padding: 8rem 4rem 5rem;
+      padding: 8rem 4rem 7rem;
     }
 
     .hero-texture {
@@ -845,6 +846,84 @@
       letter-spacing: 0.04em;
     }
 
+    /* ─── HERO TWO-COLUMN ─── */
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 4rem;
+      align-items: center;
+      width: 100%;
+      max-width: 1300px;
+    }
+
+    .hero-right {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: rgba(201,168,76,0.15);
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.9s forwards;
+    }
+
+    .hero-card {
+      background: rgba(0,0,0,0.3);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(201,168,76,0.08);
+      transition: background 0.3s;
+    }
+
+    .hero-card:hover { background: rgba(201,168,76,0.08); }
+
+    .hero-card-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: var(--gold-light);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-card-label {
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.4;
+    }
+
+    .hero-card-wide {
+      grid-column: span 2;
+      background: rgba(201,168,76,0.1);
+      padding: 1.5rem;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .hero-card-wide-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .hero-card-wide-text {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.5;
+    }
+
+    .hero-card-wide-text strong {
+      color: var(--gold-light);
+      display: block;
+      margin-bottom: 0.2rem;
+      font-size: 0.85rem;
+    }
+
     /* ─── ANIMATIONS ─── */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(24px); }
@@ -869,10 +948,15 @@
       section { padding: 4rem 1.5rem; }
 
       .hero {
-        padding: 6rem 1.5rem 14rem;
+        padding: 6rem 1.5rem 1.5rem;
         min-height: auto;
+        align-items: flex-start;
       }
-      .hero-content { padding-bottom: 1rem; }
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+      .hero-content { padding-bottom: 0; }
       .hero-headline { font-size: 2.4rem; }
       .hero-actions {
         flex-direction: column;
@@ -880,17 +964,11 @@
         gap: 1rem;
       }
       .btn-primary { width: 100%; text-align: center; }
+      .hero-right { grid-template-columns: 1fr 1fr; }
 
       .hero-stat-bar {
-        padding: 1.2rem 1.5rem;
-        gap: 1.2rem;
-        flex-wrap: wrap;
-        position: absolute;
-        bottom: 0;
+        display: none;
       }
-      .hero-stat { width: calc(50% - 0.6rem); }
-      .hero-stat-num { font-size: 1.4rem; }
-      .hero-stat-label { font-size: 0.62rem; }
 
       .white-earth-inner { grid-template-columns: 1fr; gap: 3rem; }
       .services-header { grid-template-columns: 1fr; gap: 2rem; }
@@ -906,9 +984,10 @@
     }
 
     @media (max-width: 480px) {
-      .hero { padding: 5rem 1.2rem 16rem; }
+      .hero { padding: 5rem 1.2rem 1.2rem; }
       .hero-headline { font-size: 2rem; }
-      .hero-stat { width: 100%; }
+      .hero-right { grid-template-columns: 1fr 1fr; }
+      .hero-card-num { font-size: 1.8rem; }
       .proof-dot { display: none; }
       .proof-item { font-size: 0.65rem; }
     }
@@ -931,22 +1010,49 @@
   <section class="hero">
     <div class="hero-texture"></div>
     <div class="hero-grid"></div>
-    <div class="hero-content">
-      <div class="hero-eyebrow">Minnesota Cannabis Consulting</div>
-      <h1 class="hero-headline">
-        From License Application<br>to <em>Open for Business</em>
-      </h1>
-      <p class="hero-sub">
-        Minnesota's highest-caliber cannabis consulting practice. End-to-end expertise in licensing, facility buildout, FPOR, SOPs, and OCM compliance — led by Alexander Oxendine, who personally took White Earth Nation's cannabis operation from zero to $6 million in a single year.
-      </p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn-primary">Schedule a Consultation</a>
-        <a href="#services" class="btn-ghost">
-          View Services
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-eyebrow">Minnesota Cannabis Consulting</div>
+        <h1 class="hero-headline">
+          From License Application<br>to <em>Open for Business</em>
+        </h1>
+        <p class="hero-sub">
+          Minnesota's highest-caliber cannabis consulting practice. End-to-end expertise in licensing, facility buildout, FPOR, SOPs, and OCM compliance — led by Alexander Oxendine, who personally took White Earth Nation's cannabis operation from zero to $6 million in a single year.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">Schedule a Consultation</a>
+          <a href="#services" class="btn-ghost">
+            View Services
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-card">
+          <div class="hero-card-num">$6M+</div>
+          <div class="hero-card-label">Revenue Generated in Year One</div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-num">7,000+</div>
+          <div class="hero-card-label">Plants at Peak Operations</div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-num">1 Yr</div>
+          <div class="hero-card-label">Zero to Fully Operational</div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-num">MN</div>
+          <div class="hero-card-label">Based &amp; OCM Focused</div>
+        </div>
+        <div class="hero-card-wide">
+          <div class="hero-card-wide-icon">🏛️</div>
+          <div class="hero-card-wide-text">
+            <strong>Waabigwan Mashkiki, LLC</strong>
+            White Earth Nation Cannabis — built from scratch by Alexander Oxendine. Licensing, facility, tribal code &amp; regulations, operations — all of it.
+          </div>
+        </div>
       </div>
     </div>
     <div class="hero-stat-bar">
