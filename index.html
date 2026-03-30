@@ -978,6 +978,7 @@
       .about-inner { grid-template-columns: 1fr; gap: 3rem; }
       .about-card { position: static; }
       .contact-grid { grid-template-columns: 1fr; }
+      #contact > div > div { grid-template-columns: 1fr !important; gap: 2rem !important; }
       footer { padding: 1.5rem; flex-direction: column; text-align: center; }
       .proof-strip { padding: 1rem 1.5rem; gap: 1rem; }
       .we-metrics { grid-template-columns: 1fr 1fr; }
@@ -1295,26 +1296,61 @@
 
   <!-- CONTACT -->
   <section class="contact-section" id="contact">
-    <div class="contact-inner">
-      <div class="section-label">Get in Touch</div>
-      <h2 class="section-title" style="color:var(--white);">Start the Conversation</h2>
-      <div class="contact-grid">
-        <div class="contact-block">
-          <div class="contact-block-label">Email</div>
-          <a href="mailto:a@oxendinellc.com" class="contact-block-value">a@oxendinellc.com</a>
+    <div style="max-width:1100px;margin:0 auto;">
+      <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:4rem;align-items:start;">
+
+        <!-- Left: Contact Info -->
+        <div>
+          <div class="section-label" style="justify-content:flex-start;">Get in Touch</div>
+          <h2 class="section-title" style="color:var(--white);">Start the<br><em>Conversation</em></h2>
+          <p style="font-size:0.9rem;font-weight:300;color:rgba(255,255,255,0.55);line-height:1.8;margin-bottom:2rem;">
+            Ready to talk through your licensing situation? Fill out the form and Alexander will get back to you directly — no junior staff, no runaround.
+          </p>
+          <div class="contact-grid" style="grid-template-columns:1fr;">
+            <div class="contact-block">
+              <div class="contact-block-label">Email</div>
+              <a href="mailto:a@oxendinellc.com" class="contact-block-value">a@oxendinellc.com</a>
+            </div>
+            <div class="contact-block">
+              <div class="contact-block-label">Phone</div>
+              <a href="tel:6515152611" class="contact-block-value">651-515-2611</a>
+            </div>
+            <div class="contact-block">
+              <div class="contact-block-label">Based In</div>
+              <span class="contact-block-value">Lengby, Minnesota</span>
+            </div>
+            <div class="contact-block">
+              <div class="contact-block-label">Service Area</div>
+              <span class="contact-block-value">All of Minnesota</span>
+            </div>
+          </div>
         </div>
-        <div class="contact-block">
-          <div class="contact-block-label">Phone</div>
-          <a href="tel:6515152611" class="contact-block-value">651-515-2611</a>
+
+        <!-- Right: Form -->
+        <div style="background:var(--forest-mid);border:1px solid var(--border);padding:2.5rem;">
+          <form action="https://formspree.io/f/mzdkrkjv" method="POST">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;">
+              <div>
+                <label style="display:block;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem;">Full Name *</label>
+                <input type="text" name="name" required style="width:100%;background:var(--forest-light);border:1px solid var(--border);color:var(--white);padding:0.75rem 1rem;font-size:0.9rem;font-family:'DM Sans',sans-serif;outline:none;box-sizing:border-box;" placeholder="Alexander Oxendine">
+              </div>
+              <div>
+                <label style="display:block;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem;">Phone Number</label>
+                <input type="tel" name="phone" style="width:100%;background:var(--forest-light);border:1px solid var(--border);color:var(--white);padding:0.75rem 1rem;font-size:0.9rem;font-family:'DM Sans',sans-serif;outline:none;box-sizing:border-box;" placeholder="651-555-1234">
+              </div>
+            </div>
+            <div style="margin-bottom:1rem;">
+              <label style="display:block;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem;">Email Address *</label>
+              <input type="email" name="email" required style="width:100%;background:var(--forest-light);border:1px solid var(--border);color:var(--white);padding:0.75rem 1rem;font-size:0.9rem;font-family:'DM Sans',sans-serif;outline:none;box-sizing:border-box;" placeholder="you@example.com">
+            </div>
+            <div style="margin-bottom:1.5rem;">
+              <label style="display:block;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem;">Message *</label>
+              <textarea name="message" required rows="5" style="width:100%;background:var(--forest-light);border:1px solid var(--border);color:var(--white);padding:0.75rem 1rem;font-size:0.9rem;font-family:'DM Sans',sans-serif;outline:none;box-sizing:border-box;resize:vertical;" placeholder="Tell me about your cannabis business, where you are in the licensing process, and how I can help..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%;text-align:center;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;">Send Message</button>
+          </form>
         </div>
-        <div class="contact-block">
-          <div class="contact-block-label">Based In</div>
-          <span class="contact-block-value">Lengby, Minnesota</span>
-        </div>
-        <div class="contact-block">
-          <div class="contact-block-label">Service Area</div>
-          <span class="contact-block-value">All of Minnesota</span>
-        </div>
+
       </div>
     </div>
   </section>
